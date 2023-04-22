@@ -8,7 +8,7 @@ if num > 0:
     while i <= num:
       factorial=i*factorial
       i+=1
-    print("El factorial de", num ,"es", factorial)
+    print(f"El factorial de {num} es {factorial}")
 
 
 else:

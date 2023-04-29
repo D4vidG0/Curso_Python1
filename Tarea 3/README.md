@@ -1,5 +1,8 @@
 # Tarea 3 Calculadora
 ## David Gonzalez Sanchez
+
+Mi tarea contiene 4 modulos y genera un archivo de texto llamando log.txt. Tambien hace comprobacion de datos de ingreso. 
+
 ### Modulo Principal
 
 El modulo principal se llama calculadora y es el archivo que se corre

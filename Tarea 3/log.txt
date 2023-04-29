@@ -1,0 +1,26 @@
+El resultado de la operacion es: 880
+El resultado de la suma es: 619
+El resultado de la suma es: 540
+El resultado de la resta es: -759805
+El resultado de la suma es: 4
+El resultado de la resta es: 555
+El resultado de la multiplicacion es: 120
+El resultado de la division es: 2.0
+El resultado de la division es: None
+El resultado del factorial es: 120
+El resultado de la potencia es: 25
+El resultado de la division es: 7.0
+El resultado de la suma es: 1800
+El resultado del factorial es: 479001600
+El resultado de la resta es: -33
+El resultado de la suma es: 1205
+El resultado de la suma es: 900
+El resultado de la potencia es: 125
+El resultado de la potencia es: Error: No se puede realizar operacion
+El resultado de la division es: 0.0
+El resultado de la division es: None
+El resultado de la division es: No se puede dividir entre 0
+El resultado de la resta es: -200
+El resultado de la division es: No se puede dividir entre 0
+El resultado de la division es:  ERROR: No se puede dividir entre 0
+El resultado del factorial es: ERROR: El factorial de un negativo no existe

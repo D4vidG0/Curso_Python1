@@ -9,9 +9,10 @@ def repartir_jugador(mano_jugadores, mazo): #esta funcion sirve para repartir ot
         while True:
             print("\n*********PARTIDA EN PROGRESO******\n")
             hand.mostrar_mano(False)
+            valor_palos = hand.valor_palo() # todos los palos se guardan en una lista. La cree solo para contar si hay 2 cartas
             print(f"El valor de su mano es: {hand.value}")
-            if hand.value == 21 and (len(mano_jugadores) == 2):
-                hand.value == 212
+            if hand.value == 21 and (len(valor_palos) == 2): #si suma 21 y tiene 2 palos significa que tiene 2 cartas
+                hand.value = 212
                 return(hand.value)
             goon = input(f'{hand.jugador}, quiere otra carta? (Y/N): ')
             print("\n*********PARTIDA EN PROGRESO******\n")
@@ -175,4 +176,4 @@ def Partida(user): #con esta funcion crea la partida contra la casa
                     return"GANO"
                 else:
                     return"PERDIO" 
-                
+

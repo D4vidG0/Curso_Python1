@@ -118,6 +118,7 @@ Aca se presenta el manual de usuario para la aplicacion.
 Cualquier consideración o comentario adicional sobre la aplicación. Por ejemplo:
 
 - Se debe correr la aplicacion de main para correr todo el programa.
+- La carta tapada se representa como CARTA TAPADA. 
 - Queria meter dentro de las estadisticas, el porcentaje de partidas ganadas pero por razones de tiempo no pude. 
 - Se crea un archivo de estadisticas para cada usuario. 
 - Use de base los ejemplos de la clase e Internet. 

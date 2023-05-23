@@ -7,6 +7,7 @@ class Mano:
         self.value = 0
         self.carta = ()
         self.value2 = 0
+        self.palos = " "
         
         
     def mostrar_mano(self, esbot = True): #este metodo es el que me muestra la mano de cada jugador
@@ -31,7 +32,13 @@ class Mano:
               self.value2 = VALORES[self.cartas[i].valor]
               valores.append(self.value2)
          return valores
-              
+    
+    def valor_palo(self):
+          palos = []
+          for i in range(0, len(self.cartas)):
+              self.palos = VALORES[self.cartas[i].valor]
+              palos.append(self.palos)
+          return palos
      
     
       

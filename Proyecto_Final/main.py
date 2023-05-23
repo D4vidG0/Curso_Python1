@@ -24,23 +24,37 @@ def menu_principal():
          print("****LISTA DE USUARIOS EXISTENTES****")
          for existente in users: #imprime los usuario existentes
             print(existente)
-         user = input("Digite el usuario:")
-         if user in users:
-            logs.obtener_stats(user) #con esta funcion se obtienen las estadisticas
-            cont = True
-            while cont:
+         seguir = input("Desea continuar? (Y/N):")
+         if seguir == "Y" or seguir == 'y':
+            user = input("Digite el usuario:")
+            user = user.upper() #Con esto hacemos que a la hora de digiar el usuario sea indiferente las mayusculas
+            if user in users:
+             logs.obtener_stats(user) #con esta funcion se obtienen las estadisticas
+             cont = True
+             while cont:
                ret = input("Digite RETURN para regresar al menu principal: \n") #el usuario tiene que escribir return para regresar
                ret = ret.lower()
                if ret == "RETURN" or ret == "return":
                   cont = False
+            else:
+               print("USUARIO NO EXISTE") #condicion que imprima error si el usuario no existe
+               cont = True
+               while cont:
+                  ret = input("Digite RETURN para regresar al menu principal: \n") #tiene que digitar return para regresar al menu principal
+                  ret = ret.lower() #con esto acepta cualquier variacion de la palabra return
+                  if ret == "RETURN" or ret == "return":
+                     cont = False
+         elif seguir == "N" or seguir == "n":
+            print("REGRESANDO AL MENU PRINCIPAL ... ")
+            time.sleep(2)
+            exit
          else:
-            print("USUARIO NO EXISTE") #condicion que imprima error si el usuario no existe
-            cont = True
-            while cont:
-               ret = input("Digite RETURN para regresar al menu principal: \n") #tiene que digitar return para regresar al menu principal
-               ret = ret.lower() #con esto acepta cualquier variacion de la palabra return
-               if ret == "RETURN" or ret == "return":
-                  cont = False
+           print("****ERROR:OPCION NO VALIDA****")
+           time.sleep(1)
+           print("REGRESANDO AL MENU PRINCIPAL ... ")
+           time.sleep(2)
+           exit 
+
 
        elif num == "3": #sale del programa
           os.system('cls')
